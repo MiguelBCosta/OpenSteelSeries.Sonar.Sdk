@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSteelSeries.Sonar.Sdk", "OpenSteelSeries.Sonar.Sdk\OpenSteelSeries.Sonar.Sdk.csproj", "{80CBBA12-D107-4BAD-8FEB-2A9DF6A97FA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSteelSeries.Sonar.Sdk.DepedencyInjection", "OpenSteelSeries.Sonar.Sdk.DepedencyInjection\OpenSteelSeries.Sonar.Sdk.DepedencyInjection.csproj", "{C923E5BA-D810-4835-B084-E38D4048DFDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{518E1A19-333A-4382-873B-540EA3779FF4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80CBBA12-D107-4BAD-8FEB-2A9DF6A97FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80CBBA12-D107-4BAD-8FEB-2A9DF6A97FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80CBBA12-D107-4BAD-8FEB-2A9DF6A97FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80CBBA12-D107-4BAD-8FEB-2A9DF6A97FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C923E5BA-D810-4835-B084-E38D4048DFDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C923E5BA-D810-4835-B084-E38D4048DFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C923E5BA-D810-4835-B084-E38D4048DFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C923E5BA-D810-4835-B084-E38D4048DFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B05D7486-260D-4616-83AF-854E58242CE5}
+	EndGlobalSection
+EndGlobal
