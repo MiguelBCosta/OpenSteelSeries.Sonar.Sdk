@@ -17,4 +17,31 @@
     <ProjectReference Include="..\OpenSteelSeries.Sonar.Sdk\OpenSteelSeries.Sonar.Sdk.csproj" />
   </ItemGroup>
 
+	<PropertyGroup>
+		<Authors>Miguel Bertemes Costa</Authors>
+		<!-- A list of tags to help the search engine to understand the content of the package -->
+		<PackageTags>SteelSeries, Sonar, SDK, library</PackageTags>
+		<Description>A OpenSteelSeries SDK to interact with the SteelSeries Sonar </Description>
+		<PackageProjectUrl>https://github.com/MiguelBCosta/OpenSteelSeries.Sonar.Sdk</PackageProjectUrl>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath=""/>
+	</ItemGroup>
+	<PropertyGroup>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="docs\README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+	<PropertyGroup>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\icon.png" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
 </Project>
