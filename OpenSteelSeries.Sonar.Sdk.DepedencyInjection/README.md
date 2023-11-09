@@ -1,38 +1,43 @@
-﻿**Disclaimer:** Este projeto é desenvolvido de forma independente e não possui qualquer relação com a SteelSeries. A biblioteca OpenSteelSeries.Sonar.SDK foi criada para fornecer uma interface de comunicação com a API REST do SteelSeries Sonar, mas seu desenvolvimento é realizado de maneira não oficial e não está associado à SteelSeries.
+﻿
+# OpenSteelSeries.Sonar.SDK.DependencyInjection
 
-# OpenSteelSeries.Sonar.SDK
+**OpenSteelSeries.Sonar.SDK.DependencyInjection** is a library that simplifies the integration of the OpenSteelSeries.Sonar.SDK with the Microsoft Dependency Injection framework. This library streamlines the process of configuring and injecting the necessary services for seamless communication with the SteelSeries Sonar REST API.
 
-**OpenSteelSeries.Sonar.SDK** é uma biblioteca de código aberto projetada para fornecer uma interface de comunicação com a API REST do SteelSeries Sonar. Com ela, você pode:
+## Installation
 
-- [x] Alterar o modo de operação entre clássico e streamer.
-- [x] Ajustar o volume de cada dispositivo.
-- [x] Mutar e desmutar seu microfone.
-- [x] Alterar o perfil de cada dispositivo.
-- [x] Resgatar o estado de cada uma das funcionalidades acima.
+You can install the `OpenSteelSeries.Sonar.SDK.DependencyInjection` library using either the NuGet Package Manager in Visual Studio or the .NET CLI.
 
-**Nota:** O uso desta biblioteca pode ser afetado por atualizações no SteelSeries Sonar, e é importante estar ciente disso ao decidir implementá-la em seu projeto.
+### NuGet Package Manager
 
-## RoadMap
+1. Open the NuGet Package Manager in Visual Studio.
+2. Search for "OpenSteelSeries.Sonar.SDK.DependencyInjection."
+3. Select the package and click "Install."
 
-**Feito:**
-- [x] VolumeSettings Classic
-- [x] VolumeSettings Streamer
-- [x] Configs
-- [x] Mode
+### .NET CLI
 
-**A fazer:**
-- [ ] Redirecionamentos Classic
-- [ ] Redirecionamentos Streamer
-- [ ] Audio Devices
-- [ ] Feature Controller
-- E outras funcionalidades ainda não mapeadas
+Use the following command to install the package via .NET CLI:
 
-## Documentação
+```bash
+dotnet add package OpenSteelSeries.Sonar.SDK.DependencyInjection
+```
+## Getting Started
 
-O projeto é separado em dois pacotes:
+1. Ensure that you have already installed the `OpenSteelSeries.Sonar.SDK` library.
 
-1. **OpenSteelSeries.Sonar.SDK**: Neste pacote, toda a interface de comunicação está implementada e pode ser utilizado individualmente. Para mais informações, leia o [README](OpenSteelSeries.Sonar.SDK/README.md).
+2. In your startup code, you can configure the services by using the `AddOpenSteelSeriesSonaServices` method. This method should be called within the `IServiceCollection` provided by the Microsoft Dependency Injection framework.
 
-2. **OpenSteelSeries.Sonar.SDK.DependencyInjection**: Este pacote tem como objetivo injetar as dependências e facilitar seu uso. Para mais informações, leia o [README](OpenSteelSeries.Sonar.SDK.DependencyInjection/README.md).
+   ```csharp
+   using OpenSteelSeries.Sonar.Sdk
+   using OpenSteelSeries.Sonar.Sdk.DependencyInjection;
 
-Certifique-se de explorar a documentação de cada pacote para entender como utilizá-los da melhor forma em seu projeto.
+   public void ConfigureServices(IServiceCollection services)
+   {
+       services.AddOpenSteelSeriesSonaServices();
+   }
+   ```
+
+The `AddOpenSteelSeriesSonaServices` method will set up and register the necessary HttpClient instances and policies for interaction with the SteelSeries Sonar API, allowing you to inject these services into your application's components as needed.
+
+Now, you can easily inject these services into your controllers, services, or other application components to facilitate communication with the SteelSeries Sonar API.
+
+For specific usage details and examples of working with SteelSeries Sonar features, please refer to the [OpenSteelSeries.Sonar.SDK documentation](../OpenSteelSeries.Sonar.SDK/README.md).

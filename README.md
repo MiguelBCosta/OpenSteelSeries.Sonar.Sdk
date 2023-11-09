@@ -1,38 +1,38 @@
-**Disclaimer:** Este projeto é desenvolvido de forma independente e não possui qualquer relação com a SteelSeries. A biblioteca OpenSteelSeries.Sonar.SDK foi criada para fornecer uma interface de comunicação com a API REST do SteelSeries Sonar, mas seu desenvolvimento é realizado de maneira não oficial e não está associado à SteelSeries.
-
 # OpenSteelSeries.Sonar.SDK
 
-**OpenSteelSeries.Sonar.SDK** é uma biblioteca de código aberto projetada para fornecer uma interface de comunicação com a API REST do SteelSeries Sonar. Com ela, você pode:
+**Disclaimer:** This project is independently developed and has no affiliation with SteelSeries. The OpenSteelSeries.Sonar.SDK library has been created to provide a communication interface with the SteelSeries Sonar REST API. However, its development is unofficial and not associated with SteelSeries.
 
-- [x] Alterar o modo de operação entre clássico e streamer.
-- [x] Ajustar o volume de cada dispositivo.
-- [x] Mutar e desmutar seu microfone.
-- [x] Alterar o perfil de cada dispositivo.
-- [x] Resgatar o estado de cada uma das funcionalidades acima.
+**OpenSteelSeries.Sonar.SDK** is an open-source library designed to provide a communication interface with the SteelSeries Sonar REST API. With it, you can:
 
-**Nota:** O uso desta biblioteca pode ser afetado por atualizações no SteelSeries Sonar, e é importante estar ciente disso ao decidir implementá-la em seu projeto.
+- [x] Switch between Classic and Streamer operation modes.
+- [x] Adjust the volume of each device.
+- [x] Mute and unmute your microphone.
+- [x] Change the profile of each device.
+- [x] Retrieve the status of each of the above functionalities.
+
+**Note:** The use of this library may be affected by updates to SteelSeries Sonar, so it's essential to be aware of this when deciding to implement it in your project.
 
 ## RoadMap
 
-**Feito:**
+**Completed:**
 - [x] VolumeSettings Classic
 - [x] VolumeSettings Streamer
 - [x] Configs
 - [x] Mode
 
-**A fazer:**
-- [ ] Redirecionamentos Classic
-- [ ] Redirecionamentos Streamer
+**To Do:**
+- [ ] Classic Redirections
+- [ ] Streamer Redirections
 - [ ] Audio Devices
 - [ ] Feature Controller
-- E outras funcionalidades ainda não mapeadas
+- And other functionalities yet to be mapped
 
-## Documentação
+## Documentation
 
-O projeto é separado em dois pacotes:
+The project is divided into two packages:
 
-1. **OpenSteelSeries.Sonar.SDK**: Neste pacote, toda a interface de comunicação está implementada e pode ser utilizado individualmente. Para mais informações, leia o [README](OpenSteelSeries.Sonar.SDK/README.md).
+1. **OpenSteelSeries.Sonar.SDK**: In this package, the entire communication interface is implemented and can be used individually. For more information, read the [README](OpenSteelSeries.Sonar.SDK/README.md).
 
-2. **OpenSteelSeries.Sonar.SDK.DependencyInjection**: Este pacote tem como objetivo injetar as dependências e facilitar seu uso. Para mais informações, leia o [README](OpenSteelSeries.Sonar.SDK.DependencyInjection/README.md).
+2. **OpenSteelSeries.Sonar.SDK.DependencyInjection**: This package is designed to inject dependencies and facilitate its use. For more information, read the [README](OpenSteelSeries.Sonar.SDK.DependencyInjection/README.md).
 
-Certifique-se de explorar a documentação de cada pacote para entender como utilizá-los da melhor forma em seu projeto.
+Make sure to explore the documentation for each package to understand how to use them effectively in your project.
