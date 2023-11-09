@@ -1,5 +1,4 @@
-﻿
-# OpenSteelSeries.Sonar.SDK.DependencyInjection
+﻿# OpenSteelSeries.Sonar.SDK.DependencyInjection
 
 **OpenSteelSeries.Sonar.SDK.DependencyInjection** is a library that simplifies the integration of the OpenSteelSeries.Sonar.SDK with the Microsoft Dependency Injection framework. This library streamlines the process of configuring and injecting the necessary services for seamless communication with the SteelSeries Sonar REST API.
 
