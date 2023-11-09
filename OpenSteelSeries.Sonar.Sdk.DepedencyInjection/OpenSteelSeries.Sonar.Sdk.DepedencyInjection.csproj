@@ -1,21 +1,44 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<EnablePackageValidation>true</EnablePackageValidation>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<!-- If all members are not documented, you can disable the compiler warnings -->
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="7.0.13" />
-    <PackageReference Include="Polly" Version="8.1.0" />
-    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="7.0.13" />
+		<PackageReference Include="Polly" Version="8.1.0" />
+		<PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OpenSteelSeries.Sonar.Sdk\OpenSteelSeries.Sonar.Sdk.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\OpenSteelSeries.Sonar.Sdk\OpenSteelSeries.Sonar.Sdk.csproj" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<Authors>Miguel Bertemes Costa</Authors>
+		<!-- A list of tags to help the search engine to understand the content of the package -->
+		<PackageTags>SteelSeries, Sonar, SDK, library</PackageTags>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Add a LICENSE.txt next to the csproj -->
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath=""/>
+	</ItemGroup>
 
 	<PropertyGroup>
 		<Authors>Miguel Bertemes Costa</Authors>
