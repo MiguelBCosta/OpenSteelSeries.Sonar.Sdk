@@ -1,5 +1,10 @@
 # OpenSteelSeries.Sonar.SDK
 
+[![Build Status](https://github.com/MiguelBCosta/OpenSteelSeries.Sonar.Sdk/actions/workflows/publish.yml/badge.svg)](https://github.com/MiguelBCosta/OpenSteelSeries.Sonar.Sdk/actions) \
+![Nuget](https://img.shields.io/nuget/v/OpenSteelSeries.Sonar.Sdk?label=OpenSteelSeries.Sonar.Sdk.DepedencyInjection) \
+![Nuget](https://img.shields.io/nuget/v/OpenSteelSeries.Sonar.Sdk.DepedencyInjection?label=OpenSteelSeries.Sonar.Sdk.DepedencyInjection)
+
+
 **Disclaimer:** This project is independently developed and has no affiliation with SteelSeries. The OpenSteelSeries.Sonar.SDK library has been created to provide a communication interface with the SteelSeries Sonar REST API. However, its development is unofficial and not associated with SteelSeries.
 
 **OpenSteelSeries.Sonar.SDK** is an open-source library designed to provide a communication interface with the SteelSeries Sonar REST API. With it, you can:
