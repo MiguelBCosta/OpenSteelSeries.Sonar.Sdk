@@ -1,7 +1,7 @@
 # OpenSteelSeries.Sonar.SDK
 
 [![Build Status](https://github.com/MiguelBCosta/OpenSteelSeries.Sonar.Sdk/actions/workflows/publish.yml/badge.svg)](https://github.com/MiguelBCosta/OpenSteelSeries.Sonar.Sdk/actions) \
-![Nuget](https://img.shields.io/nuget/v/OpenSteelSeries.Sonar.Sdk?label=OpenSteelSeries.Sonar.Sdk.DepedencyInjection) \
+![Nuget](https://img.shields.io/nuget/v/OpenSteelSeries.Sonar.Sdk?label=OpenSteelSeries.Sonar.Sdk) \
 ![Nuget](https://img.shields.io/nuget/v/OpenSteelSeries.Sonar.Sdk.DepedencyInjection?label=OpenSteelSeries.Sonar.Sdk.DepedencyInjection)
 
 
