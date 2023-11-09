@@ -31,7 +31,7 @@
 
 The project is divided into two packages:
 
-1. **OpenSteelSeries.Sonar.SDK**: In this package, the entire communication interface is implemented and can be used individually. For more information, read the [README](OpenSteelSeries.Sonar.SDK).
+1. **OpenSteelSeries.Sonar.SDK**: In this package, the entire communication interface is implemented and can be used individually. For more information, read the [README](OpenSteelSeries.Sonar.SDK/README.md).
 
 2. **OpenSteelSeries.Sonar.SDK.DependencyInjection**: This package is designed to inject dependencies and facilitate its use. For more information, read the [README](OpenSteelSeries.Sonar.SDK.DependencyInjection).
 
