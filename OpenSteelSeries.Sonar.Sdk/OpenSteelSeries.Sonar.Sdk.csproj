@@ -33,6 +33,9 @@
 		<None Include="..\LICENSE.txt" Pack="true" PackagePath=""/>
 	</ItemGroup>
 	<PropertyGroup>
+	  <Version>1.0.1</Version>
+	</PropertyGroup>
+	<PropertyGroup>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 	<ItemGroup>
