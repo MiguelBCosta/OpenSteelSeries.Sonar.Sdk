@@ -8,6 +8,7 @@ namespace OpenSteelSeries.Sonar.Sdk.Models.Volumes
     [JsonObject(NamingStrategyType = typeof(CamelCaseNamingStrategy))]
     public class VolumeInfo
     {
+        public RedirectionVolumes Masters { get; set; } = new RedirectionVolumes();
         public Dictionary<DeviceRole, RedirectionVolumes> Devices { get; } = new Dictionary<DeviceRole, RedirectionVolumes>();
     }
 }
