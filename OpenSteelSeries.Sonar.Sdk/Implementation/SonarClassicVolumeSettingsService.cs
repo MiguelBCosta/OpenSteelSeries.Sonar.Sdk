@@ -36,7 +36,7 @@ namespace OpenSteelSeries.Sonar.Sdk.Implementation
         public async Task<VolumeInfo> SetDeviceRoleVolumeAsync(DeviceRole role, float volume)
         {
             HttpContent emptyContent = new StringContent(string.Empty);
-            HttpResponseMessage response = await _httpClient.PutAsync($"{CONTROLLER_PREFIX}/{role}/Volume/{volume}", emptyContent);
+            HttpResponseMessage response = await _httpClient.PutAsync($"{CONTROLLER_PREFIX}/{role}/Volume/{volume:F2}", emptyContent);
             response.EnsureSuccessStatusCode();
             string jsonContent = await response.Content.ReadAsStringAsync();
             VolumeInfo result = JsonConvert.DeserializeObject<VolumeInfo>(jsonContent);
@@ -56,7 +56,7 @@ namespace OpenSteelSeries.Sonar.Sdk.Implementation
         public async Task<VolumeInfo> SetMasterVolumeAsync(float volume)
         {
             HttpContent emptyContent = new StringContent(string.Empty);
-            HttpResponseMessage response = await _httpClient.PutAsync($"{CONTROLLER_PREFIX}/Master/Volume/{volume}", emptyContent);
+            HttpResponseMessage response = await _httpClient.PutAsync($"{CONTROLLER_PREFIX}/Master/Volume/{volume:F2}", emptyContent);
             response.EnsureSuccessStatusCode();
             string jsonContent = await response.Content.ReadAsStringAsync();
             VolumeInfo result = JsonConvert.DeserializeObject<VolumeInfo>(jsonContent);
